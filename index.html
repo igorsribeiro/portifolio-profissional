@@ -8,7 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <!-- Fim Google Fonts -->
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Fim do Bootstrap Icons-->
     <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
     <title>Meu Portifólio</title>
 </head>
 <body>
@@ -23,19 +29,169 @@
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
                 </ul>
             </nav>
 
             <div class="igor-contato">
-                <a href="#">
+                <a href="#contato">
                     <button>Contato</button>
                 </a>
+            </div><!-- igor-contato -->
+            
+            <div class="abrir-menu" id="abrir-menu">
+                <i class="bi bi-list"></i>
             </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="menu-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div><!-- menu-fechar-->
+
+                <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            </div><!--menu-mobile-->
+
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div>
+
         </div><!-- interface -->
     </header>
+
+    <main>
+        <section class="topo-do-site" id="inicio">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
+                        <p>Desenvolver soluções que aliam visual e lógica é necessário na atualidade. Cada projeto é uma nova chance de aprender, criar e evoluir, sempre buscando entregar funcional e significativo. Estou à disposição para transformar suas ideias no mundo digital.</p>
+
+                        <div class="igor-contato">
+                            <a href="#contato">
+                                <button>Entre em contato</button>
+                            </a>
+                        </div>
+                    </div><!-- Txt topo site -->
+
+                    <div class="img-topo-site">
+                        <img src="imagens/imagem-frente-estilizado2.jpeg" alt="">
+                    </div><!-- img topo site -->
+                </div><!-- flex -->
+            </div><!-- Interface -->
+        </section><!-- Topo do site -->
+
+        <section class="especialidades" id="especialidades">
+            <div class="interface">
+                <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-code-square"></i>
+                        <h3>Criação de WebSites</h3>
+                        <p>Criação de websites responsivos e modernos, focando em experiência do usuário, desempenho e visual atraente. Do layout ao código, entrego soluções funcionais e sob medida.</p>
+                    </div><!-- especialidades-box -->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-bootstrap"></i>
+                        <h3>Utilização de Bootstrap</h3>
+                        <p>Com o Bootstrap como framework, crio layouts responsivos com rapidez, consistência e excelente compatibilidade entre navegadores e dispositivos.</p>
+                    </div><!-- especialidades-box -->
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-c-circle"></i>
+                        <h3>Lógica de Programação</h3>
+                        <p>Tenho uma base sólida em lógica de programação, com foco atual em linguagem C. Busco escrever códigos claros, eficientes e estruturados — e planejo expandir meu conhecimento para outras linguagens brevemente.</p>
+                    </div><!-- especialidades-box -->
+                </div><!-- flex -->
+            </div><!-- interface -->
+        </section><!-- especialidades -->
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="imagens/foto-sobre.png" alt="">
+                    </div><!-- img-sobre-->
+
+                    <div class="txt-sobre">
+                        <h2>MUITO PRAZER, <span>SOU IGOR RIBEIRO.</span></h2>
+                        <p> Me chamo Igor e sou um entusiasta da programação. Comecei minha jornada desenvolvendo projetos em front-end e explorando a linguagem C, onde aprendi a estruturar soluções desde a base.</p>
+                        <p>Estou sempre em busca de aprender novas tecnologias e expandir meu repertório, com o objetivo de evoluir como desenvolvedor e transformar boas ideias em experiências digitais reais. Com conhecimento em HTML, CSS, JavaScript, fundamentos SCRUM e Git/GitHub, estou aqui para tirar as suas ideias do papel.</p>
+                        <div class="igor-social">
+                            <a href="https://www.instagram.com/igorrb._?igsh=dHVtYm4zYnNlaWg4" target="_blank" rel="external"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://github.com/igorsribeiro" target="_blank" rel="external"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/igor-ribeiro-55bb93346/" target="_blank" rel="external"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div><!-- igor-social -->
+                    </div><!-- txt-sobre -->
+                </div><!-- Flex -->
+            </div><!-- Interface -->
+        </section><!-- Sobre -->
+
+        <section class="portfolio" id="portfolio">
+            <div class="interface">
+                <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+                <div class="flex">
+                    <a href="techconnect.html" target="_blank" rel="external">
+                        <div class="img-port" style="background-image: url(imagens/Captura\ de\ tela_Tech_Summit2.jpeg);">
+                            <div class="overlay">Projeto TechConnect</div>
+                        </div>
+                    </a>
+                    <a href="techsummit.html" target="_blank" rel="external">
+                        <div class="img-port" style="background-image: url(imagens/Captura\ de\ tela_Tech_Summit2.jpeg);">
+                            <div class="overlay">Projeto TechSummit</div>
+                        </div>
+                    </a>
+                    <a href="youtubeclone.html" target="_blank" rel="external">
+                        <div class="img-port" style="background-image: url(imagens/Captura\ de\ tela_Tech_Summit2.jpeg);">
+                            <div class="overlay">Projeto Clone do Youtube</div>
+                        </div>
+                    </a>
+                </div><!-- flex-->
+            </div><!-- Interface -->
+        </section><!-- Portifólio -->
+
+        <section class="fala" id="contato">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+                <div class="flex">
+                    <div class="igor-social">
+                            <a href="https://wa.me/71992922677/?text=Olá,%20vim%20pelo%20portfólio%20profissional" target="_blank" rel="external"><button><i class="bi bi-whatsapp"></i></button></a>
+                            <a href="https://www.instagram.com/igorrb._?igsh=dHVtYm4zYnNlaWg4" target="_blank" rel="external"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://github.com/igorsribeiro" target="_blank" rel="external"><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://www.linkedin.com/in/igor-ribeiro-55bb93346/" target="_blank" rel="external"><button><i class="bi bi-linkedin"></i></button></a>
+                        </div><!-- igor-social -->
+                </div><!-- flex-->
+            </div><!--interface-->
+        </section><!--fala-->
+
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="imagens/logoestilizado.png" alt="Logo Rodapé ">
+                    </div><!--logo footer-->
+                </div><!--flex-->
+            </div><!-- line-footer-->
+
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i><a href="mailto:igordeveloper@outlook.com">igordeveloper@outlook.com</a></p>
+            </div><!-- line-footer-->
+        </div><!-- interface -->
+    </footer>
+
 </body>
 </html>
