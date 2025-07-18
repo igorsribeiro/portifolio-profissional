@@ -357,25 +357,6 @@ section.portfolio .flex{
     gap: 10px 4%;
 }
 
-.topo-do-site .img-topo-site1 img{
-    width: 750px;
-    height: 500px;
-}
-
-/* TECH SUMMIT */
-
-.topo-do-site .img-topo-site2 img{
-    height: 600px;
-    width: 600px;
-}
-
-/* CLONE YOUTUBE */ 
-
-.topo-do-site .img-topo-site3 img{
-    height: 370px;
-    width: 600px;
-}
-
 /* FALA COMIGO */
 
 section.fala {
@@ -465,7 +446,6 @@ footer .line-footer a{
         flex-direction: column-reverse;
     }
 
-
     /* CABEÇALHO */
     .menu-desktop, .igor-contato{
         display: none;
@@ -499,7 +479,7 @@ footer .line-footer a{
     text-align: center;
     }
 
-    .igor-social{
+    .sobre .igor-social{
         text-align: center;
         margin-top: 30px;
     }
@@ -545,5 +525,22 @@ footer .line-footer a{
 
     .abrir-menu{
         display: block;
+    }
+
+    /* IMAGENS */
+
+    .interface .img-topo-site1 img{
+        max-width: 100%;
+        height: auto;
+    }
+
+      .interface .img-topo-site2 img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .interface .img-topo-site3 img{
+        max-width: 100%;
+        height: auto;
     }
 }
