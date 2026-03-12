@@ -187,7 +187,10 @@ section.topo-do-site .flex{
     border-radius: 24px;
 }
 
-
+.topo-do-site .img-topo-site img {
+  animation: none !important;
+  transition: none !important;
+}
 
 
 /* ESTILO DAS ESPECIALIDADES */ 
